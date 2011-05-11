@@ -1,0 +1,294 @@
+html body{
+ min-height: 100%;
+ min-width: 100%;
+ width: 100%;
+ height: 100%;
+ margin: 0px;
+ padding: 0px;
+ background: URL(image/body.gif) repeat left top #3078c0;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ color: #FFFFFF;
+	cursor: default;
+}
+* html body{
+ width: 100%;
+ height: 100%;
+}
+div{
+ display: block;
+	position: relative;
+ width: auto;
+ height: auto; 
+ margin: 0px;
+ padding: 0px;
+}
+img{
+ margin: 0px;
+ padding: 0px;
+ border: none;
+}
+p{
+ margin: 0px;
+	padding: 0px;
+}
+#up{
+ width: 100%;
+	height: 359px;
+	background: URL(image/up.gif) repeat left top;
+	/*z-index: 30;*/
+	z-index: 100;
+}
+*+html #up{
+ z-index: 100;
+}
+#center{
+ min-width: 1000px;
+	width: 85%;
+ background: URL(image/center.gif) no-repeat left top #337eca;
+	margin: 0px auto;
+	padding: 0px;
+	height: auto;
+}
+* html #center{
+ width: 90%;
+}
+.cell{
+ width: 100%;
+}
+.cell .t{
+ width: 28%;
+}
+* html .cell .t{
+ width: 25%;
+}
+.cell2{
+ width: 95%;
+	margin-top: 5px;
+	margin: 5px auto;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+}
+button{
+ background: URL(image/zakaz.gif) repeat-x #333333;
+	width: 110px;
+	height: 27px;
+	cursor: pointer;
+	border: none;
+	text-transform: uppercase;
+	color: #CCCCCC;
+	font-size: 12px;
+	padding: 1px 2px 4px 2px;
+}
+button:hover{
+ background: URL(image/zakaz2.gif) repeat-x #000000;
+	color: #FFFFFF;
+}
+*+html button{
+	padding: 2px 2px 2px 2px;
+}
+.cell2 td.head{
+ text-align: center;
+	padding: 4px;
+	border-bottom: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF; 
+	/*border: 1px solid #FFFFFF;*/
+	font-size: 12px;
+	font-weight: bold;
+}
+.cell2 td{
+ text-align: center;
+	padding: 6px;
+	border-bottom: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF; 
+	/*border: 1px solid #FFFFFF;*/
+	font-size: 12px;
+}
+.cell ul{
+ margin: 0px;
+	padding: 20px 0px 0px 20px;
+}
+.cell li{
+ /*list-style-image: URL(image/li.gif);*/
+	list-style: none;
+	margin: 13px;
+	padding: 0px;
+}
+.cell li.sel{
+ margin: 6px 13px;
+}
+.cell li.sel span{
+ background-color: #daa820;
+	margin: 0px 0px 0px 18px;
+	padding: 6px 5px;
+	width: 10px;
+	width: auto;
+	color: #000000;
+}
+.a1 td{
+ background-color: #2c6eb0;
+}
+.a2 td{
+ background-color: #235589;
+}
+a{
+ text-decoration: none;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+a:hover{
+ color: #FF962D;
+}
+.mor{
+ width: 251px;
+	height: 141px;
+	background: URL(image/mor.gif) left top no-repeat;
+	position: relative;
+	float: left;
+	margin: 2px auto;
+}
+.mor2{
+ width: 251px;
+	height: 141px;
+	background: URL(image/mor.gif) left top no-repeat;
+	position: relative;
+	float: left;
+	margin: 15px auto;
+}
+.mor div{
+ position: absolute;
+	z-index: 30;
+}
+*+html .mor div{
+ left: 0px;
+}
+* html .mor div{
+ left: 0px;
+}
+.mor img{
+ position: absolute;
+	left: 26px;
+	top: 1px;
+}
+.mor2 img{
+ position: absolute;
+	left: 26px;
+	top: 1px;
+}
+.mor img.txt{
+ position: absolute;
+	left: 92px;
+	top: 13px;
+}
+.mor2 img.txt{
+ position: absolute;
+	left: 92px;
+	top: 13px;
+}
+.mor p{
+ font-size: 11px;
+	margin: 0px;
+	padding: 65px 5px 5px 30px;;
+	text-align: left;
+}
+.mor2 p{
+ font-size: 11px;
+	margin: 0px;
+	padding: 65px 5px 5px 30px;;
+	text-align: left;
+}
+#copyright{
+ float: left;
+ margin: 0px 5px 0px 20px;
+ width: 250px;
+	height: 100px;
+ background: URL(image/copy.gif) repeat-y top left;
+}
+#copyright p{
+ font-size: 11px;
+	color: #d2d2d2;
+	margin: 0px;
+	padding: 37px 5px 0px 40px;
+}
+#copyright p a{
+ color: #d2d2d2;
+}
+#bot{ 
+ float: left;
+ margin: 0px 0px 0px 14%;
+ width: 350px;
+	height: 100px;
+ background: URL(image/bot.gif) repeat-x bottom left;
+}
+#bot p{
+ font-size: 12px;
+	color: #d2d2d2;
+	margin: 0px;
+	padding: 15px 0px 0px 0px;
+}
+#footer{
+ min-width: 1000px;
+ width: 85%;
+	margin: 0px auto;
+ height: 100px;
+	clear: both;
+	background-color: #337eca;
+	bottom: 0px;
+}
+* html #footer{
+ width: 90%;
+}
+a.a{
+ color: #daa820;
+	font-size: 11px;
+}
+a.a:hover{
+ color: #FFFFFF;
+}
+.kr{
+ font-size: 11px;
+	margin: 0px;
+	padding: 7px 5px 10px 10px;
+}
+.tel{
+ padding: 5px 5px 10px 15px;
+}
+.lt{
+ padding: 10px 5px 15px 30px;
+}
+h1{
+ font-family: Impact, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+form{
+ line-height: 20px;
+	margin-left: 5px;
+}
+form .txt{
+	border: 1px solid #666666;
+	background: #F3F3F3;
+	width: 250px;
+	color: #0F4373;
+}
+form textarea.txt{
+	width: 350px;
+	height: 100px;
+}
+p.art{
+ width: 80%;
+ margin: 7px 30px 12px 0px;
+}
+p.art a{
+ text-decoration: underline;
+}
+img.l{
+ float: left;
+	padding: 6px;
+}
+img.r{
+ float: right;
+	padding: 6px;
+}

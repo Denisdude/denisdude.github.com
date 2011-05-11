@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Snipes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link type="text/css" href="defcss.css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript">
+ <!--
+                function MM_preloadImages(){ //v3.0
+                  var d=document;
+                  if(d.images){
+                   if(!d.MM_p) d.MM_p=new Array();
+                   var i,j=d.MM_p.length,a=MM_preloadImages.arguments;
+                   for(i=0; i<a.length; i++)if (a[i].indexOf("#")!=0){
+                    d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];
+                   }
+                  }
+                }
+
+                function MM_findObj(n, d) { //v4.01
+                  var p,i,x;
+                  if(!d) d=document;
+                  if((p=n.indexOf("?"))>0&&parent.frames.length) {
+                    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);
+                  }
+                  if(!(x=d[n])&&d.all) x=d.all[n];
+                  for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+                  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+                  if(!x && d.getElementById) x=d.getElementById(n);
+                  return x;
+                }
+				
+				function left(n){
+				 if(n==1){
+				  document.getElementById("galleft").src="i/onbleft.gif";
+				 }else{
+				  document.getElementById("galleft").src="i/bleft.gif";
+				 }
+				}
+				function right(n){
+				 if(n==1){
+				  document.getElementById("galright").src="i/onbright.gif";
+				 }else{
+				  document.getElementById("galright").src="i/bright.gif";
+				 }
+				}	
+				
+				var a = true;			
+				//показ или скрытие подменю
+				function pmenu(n,m){
+ 				  if(n==1){
+				   if(m==1){
+				    document.getElementById("podmenu1").style.display = "block";
+				   }else{
+				    document.getElementById("podmenu1").style.display = "none";
+				   }
+				  }
+				  if(n==2){
+				   if(m==1){
+				    document.getElementById("podmenu2").style.display = "block";
+				   }else{
+				    document.getElementById("podmenu2").style.display = "none";
+				   }
+				   }
+				   if(n==3){
+				   if(m==1){
+				    document.getElementById("podmenu3").style.display = "block";
+				   }else{
+				    document.getElementById("podmenu3").style.display = "none";
+				   }}
+				   if(n==4){
+				   if(m==1){
+				    document.getElementById("podmenu4").style.display = "block";
+				   }else{
+				    document.getElementById("podmenu4").style.display = "none";
+				   }
+				  }
+				}
+				//скрытие всех подменю
+				function hideAll(){
+				 for(i=1; i<5; i++){
+				  pmenu(i,2);
+				 }
+				}
+				
+				function mOver(n, m){
+				 hideAll();
+				 a = true;
+				 pmenu(n,m);				 
+				}	
+				
+				function mOut(){
+				 if(!a){
+				  hideAll();
+				 }				
+				}	
+				
+				function mmOut(){
+				  var TM = window.setTimeout("mOut()", 500);
+				  a=false;
+				}		
+ //-->
+</script>
+</head>
+<body onLoad="MM_preloadImages();">
+<div id="shapka">
+ <div id="logo"><img src="i/logo.gif" width="224" height="239" alt="logo"></div>
+ <div id="lefth"></div>
+ <div id="uph"><img src="i/uph1.gif" width="745" height="48" alt="line"></div>
+ <div id="flash"><img src="i/centerh.gif" width="745" height="187" alt="flash"></div>
+ <div id="bottomh"></div>
+</div>
+<div id="leftblock"> 
+ <div id="menu">
+  <div id="mlr"></div>
+  <div id="mmenu">
+  <ul id="men">
+  <li><a href="#" ><img src="i/m_onas.gif" width="186" height="42" alt="о нас" title="о нас" onMouseOver="mOver(1,1)" onMouseOut="mmOut()"></a></li>
+  <li><a href="#"><img src="i/m_news.gif" width="186" height="42" alt="новости" title="новости" onMouseOver="mOver(2,1)" onMouseOut="mmOut()"></a></li>
+  <li><a href="#"><img src="i/m_contact.gif" width="186" height="42" alt="контакты" title="контакты" onMouseOver="mOver(3,1)" onMouseOut="mmOut()"></a></li>
+  <li><a href="#"><img src="i/m_gallery.gif" width="186" height="42" alt="галерея" title="галерея" onMouseOver="mOver(4,1)" onMouseOut="mmOut()"></a></li>
+  </ul>    
+  </div>
+ </div>
+ <div class="newpro">
+  <div id="mlr2"></div>
+  <div id="npro">
+   <img src="i/new_project.gif" width="186" height="25" alt="новый проект"><br>
+   <p class="standart">26 января - 11 февраля<br>
+   <img class="my" src="i/img1.jpg" width="117" height="86" alt="картинка"><br>
+   Шоколад «Воздушный»<br>Дегустация всех видов<br>шоколада.
+   </p>
+  </div>  
+ </div>
+</div>
+<div id="tst">
+<div id="content">
+ <img src="i/t_onas.gif" width="49" height="13" alt="о нас">
+ <div class="i">
+  <img class="myleft" src="i/img2.jpg" width="72" height="97" alt="картинка">
+  <p class="txt">Рекламное агенство «Снайпc» выражает Вам свое почтение и предлагает
+  взаимовыгодное сотрудничество в сфере проведения Promotion-акций по продвижению
+  торговых марок и услуг.</p>
+  <p class="txt">Рекламное агенство «Снайпc» выражает Вам свое почтение и предлагает
+  взаимовыгодное сотрудничество в сфере проведения Promotion-акций по продвижению
+  торговых марок и услуг.</p>
+ </div>
+ <div class="lineh"></div>
+ <div class="s">
+   <div class="il">
+   <img src="i/t_news.gif" width="72" height="13" alt="новости" style="margin-top: 15px">
+   <br>
+   <div class="i">   
+    <img class="myleftn" src="i/img3.jpg" width="49" height="35" alt="картинка">
+	 <p class="txt">26 января - 11 февраля. Шоколад «Воздушный». Дегустация всех видов шоколада.</p>
+	 <p class="txt">26 января - 11 февраля. Шоколад «Воздушный». Дегустация всех видов шоколада.</p>
+   </div>   
+  </div>
+  <img src="i/linev.gif" width="3" alt="linev" align="top" style="margin-left: 13px; margin-right: 13px; ">
+  <div class="ir">
+  <img src="i/t_gallery.gif" width="54" height="13" alt="галерея" style="margin-top: 15px">
+  <br>
+	 <div id="test">
+	  <!--[if IE 6]>
+    <div id="galleryIE">
+    <![endif]-->
+		<div id="gallery">
+	<table width="340" style="height: 100px; text-align: center;  vertical-align:middle;" cellpadding="0" cellspacing="0" border="0"><tr>
+	<td><img class="button" src="i/bleft.gif" width="23" height="34" alt="влево" title="влево" id="galleft" onMouseOver="left(1)" onMouseOut="left(2)"></td>
+	<td width="85"><img class="gal" src="i/gal1.jpg" width="85" height="63" alt="галерея"></td>
+	<td width="85"><img class="gal" src="i/gal2.jpg" width="85" height="63" alt="галерея"></td>
+	<td width="85"><img class="gal" src="i/gal3.jpg" width="85" height="63" alt="галерея"></td>
+	<td><img class="button" src="i/bright.gif" width="23" height="34" alt="вправо" title="вправо" id="galright" onMouseOver="right(1)" onMouseOut="right(2)"></td>	
+	</tr></table>	
+	</div>
+	<!--[if IE 6]>
+    </div>
+    <![endif]-->
+   </div>   
+  </div>
+ </div>
+ <div id="footer">
+ <img src="i/t_contact.gif" width="74" height="13" alt="контакты" style="margin-top: 15px">
+ <div class="i">
+  <p class="txt">ООО Рекламно-информационное агенство «СНАЙПС»<br> 150023, г.Ярославль, ул. Майорова, 8а.<br>
+  Тел/факс: (4852) 47-34-22, 48-01-02.  e-mail: promotion@snipes.ru</p>
+ </div> 
+ </div>
+</div>
+</div>
+<img src="i/bl.gif" width="980" height="1" alt="width">
+<!--MENU-->
+ <div id="podmenu1" onMouseOver="a=true" onMouseOut="mmOut()">
+   <ul>   
+   <li class="pm"><a href="#">подпункт1</a></li>
+   <li class="pm"><a href="#">подпункт2</a></li>
+   <li class="pm"><a href="#">подпункт3</a></li>
+   <li class="pm"><a href="#">подпункт4</a></li>
+   </ul> 
+ </div>
+ <div id="podmenu2" onMouseOver="a=true" onMouseOut="mmOut()">
+   <ul>   
+   <li class="pm"><a href="#">подпункт1</a></li>
+   <li class="pm"><a href="#">подпункт2</a></li>
+   <li class="pm"><a href="#">подпункт3</a></li>
+   <li class="pm"><a href="#">подпункт4</a></li>
+   </ul> 
+ </div>
+ <div id="podmenu3" onMouseOver="a=true" onMouseOut="mmOut()">
+   <ul>   
+   <li class="pm"><a href="#">подпункт1</a></li>
+   <li class="pm"><a href="#">подпункт2</a></li>
+   <li class="pm"><a href="#">подпункт3</a></li>
+   <li class="pm"><a href="#">подпункт4</a></li>
+   </ul> 
+ </div>
+ <div id="podmenu4" onMouseOver="a=true" onMouseOut="mmOut()">
+   <ul>   
+   <li class="pm"><a href="#">подпункт1</a></li>
+   <li class="pm"><a href="#">подпункт2</a></li>
+   <li class="pm"><a href="#">подпункт3</a></li>
+   <li class="pm"><a href="#">подпункт4</a></li>
+   </ul> 
+ </div>
+ <!--MENU-END-->
+</body>
+</html>

@@ -1,0 +1,54 @@
+div{
+ position: relative;
+ margin: 0px;
+ padding: 0px;
+}
+div#infa{
+ width: auto;
+ height: auto;
+ position: relative;
+ float: right;
+ display: block;
+ padding: 0px;
+}
+div#cat{
+ width: auto;
+ height: auto;
+ position: relative;
+ float: right;
+ display: block;
+ padding: 0px;
+}
+div#infa table{
+ margin: 0px;
+ padding: 0px;
+}
+div#infa table td{
+ text-align: left;
+ vertical-align: top;  
+}
+div#infa div.cat{
+ width: 153px;
+ display: block;
+ text-align: center;
+}
+div#infa table td img.cat{
+ border: 1px solid #fff;
+}
+div#infa table td div.cat1{
+ width: 153px;
+ background-color: #dbdbdb;
+  padding: 1px;
+}
+div#infa table td div.cat .zoom{
+ position: absolute;
+ width: 30px;
+ height: 25px;
+ right: 1px;
+ bottom: 0px;
+}
+div#infa table td{
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+}
